@@ -1,20 +1,41 @@
-<ion-header [translucent]="true">
+<ion-header translucent no-border>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button color="light">
+        <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Favorites
+      </ion-button>
+    </ion-buttons>
+    <ion-title>&nbsp;</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" src="../../assets/checkmark-filled.svg"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen="true" slot="fixed">
+  <div class="card">
+    <div class="header">
+      <div class="avatar">
+        <img src="../../assets/player104.png" alt="">
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="user-meta ion-text-center">
+        <h3 class="playername">Roger Federer</h3>
+        <h5 class="country">Switzerland</h5>
+        <h6 class="ranking">Current ranking: <ion-chip>
+            <ion-label>2</ion-label>
+          </ion-chip>
+        </h6>
+      </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-button expand="full" color="primary">http://rogerfederer.com</ion-button>
+      <ion-button expand="full" color="secondary">@RogerFederer on Twitter</ion-button>
+      <ion-button expand="full" color="secondary">View profile at ATP</ion-button>
+
+    </div>
   </div>
 </ion-content>
